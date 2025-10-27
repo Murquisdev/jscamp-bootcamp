@@ -1,119 +1,4 @@
-@import url(root.css);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: system-ui;
-  background-color: var(--background);
-  color: var(--text-primary);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.6;
-}
-.wrap--center--container {
-  max-width: var(--max-width);
-  min-width: var(--min-width);
-}
-
-h1 {
-  text-align: center;
-  font-size: var(--text-size-xxl);
-  font-weight: 800;
-}
-h2 {
-  text-align: center;
-  font-size: var(--text-size-xl);
-  font-weight: 700;
-}
-h3 {
-  text-align: center;
-  font-size: var(--text-size-l);
-  font-weight: 600;
-}
-h1,
-h2,
-h3,
-p {
-  text-wrap: balance;
-}
-p {
-  color: var(--text-secondary);
-}
-
-/* ------- HEADER ------ */
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-md);
-}
-
-.main-header__logo {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  font-size: var(--text-size-xl);
-  font-weight: 600;
-
-  svg {
-    width: var(--text-size-xxl);
-    height: var(--text-size-xxl);
-    color: var(--primary-light);
-  }
-}
-
-.main-header__nav {
-  display: flex;
-  gap: var(--text-size-xl);
-  a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: all var(--time-transition-xs);
-
-    &:hover,
-    &:focus {
-      color: var(--text-primary);
-      outline: none;
-    }
-  }
-}
-
-.main-header__buttons {
-  display: flex;
-  gap: var(--text-size-m);
-
-  a {
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    transition: all var(--time-transition-xs);
-    box-shadow: 2px 2px 5px var(--shadow);
-
-    &:hover {
-      scale: 0.95;
-      box-shadow: 5px 5px 10px var(--shadow-push);
-    }
-  }
-
-  a.primary {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
-  }
-
-  a.secondary {
-    background-color: var(--primary);
-    color: var(--text-primary);
-  }
-}
-
-/* ------- FIN HEADER ------ */
+@import url(basic.css);
 
 /* ------- MAIN ------ */
 .hero {
@@ -225,7 +110,7 @@ p {
 
     article {
       min-width: 260px;
-      max-width: 360px;
+      max-width: 320px;
       padding: var(--space-lg);
       background-color: var(--card-bg);
       display: flex;
@@ -249,18 +134,3 @@ p {
   }
 }
 /* ------- FIN MAIN ------ */
-
-/* ------- FOOTER ------ */
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--space-md);
-  border-top: 1px solid var(--border);
-
-  small {
-    color: var(--text-muted);
-    font-size: var(--text-size-s);
-  }
-}
-/* ------- FIN FOOTER ------ */

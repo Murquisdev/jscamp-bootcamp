@@ -8,25 +8,27 @@
       name="description"
       content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs."
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="wrap--center--container">
+    <div class="wrap--container__max-width">
       <header class="main-header">
         <div class="main-header__logo">
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </svg>
-          DevJobs
+          <a href="#">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            DevJobs
+          </a>
         </div>
         <nav class="main-header__nav">
           <a href="#">Buscar</a>
@@ -73,7 +75,7 @@
               />
             </label>
 
-            <button disabled type="submit">Buscar</button>
+            <button class="button-primary" type="submit">Buscar</button>
           </form>
         </section>
 
