@@ -25,6 +25,7 @@ main {
 
       .select-options {
         display: flex;
+        flex-wrap: wrap;
         gap: var(--space-md);
         select {
           padding: var(--space-sm) var(--space-md);
@@ -79,6 +80,10 @@ main {
       margin: var(--space-md) 0;
     }
 
+    ul {
+      list-style: none;
+    }
+
     article {
       display: flex;
       align-items: flex-start;
@@ -88,10 +93,10 @@ main {
       border-left: 1px solid var(--border);
     }
 
-    article:first-of-type {
+    li:first-of-type article {
       border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
-    article:last-of-type {
+    li:last-of-type article {
       border-bottom: 1px solid var(--border);
       border-radius: 0 0 var(--border-radius) var(--border-radius);
       margin-bottom: var(--space-lg);
