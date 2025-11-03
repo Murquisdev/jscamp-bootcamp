@@ -91,6 +91,7 @@ small {
   justify-content: space-between;
   align-items: center;
   padding-bottom: var(--space-md);
+  flex-wrap: wrap;
 }
 
 .main-header__logo {
