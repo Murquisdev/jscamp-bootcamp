@@ -91,6 +91,7 @@ small {
   justify-content: space-between;
   align-items: center;
   padding-bottom: var(--space-md);
+  flex-wrap: wrap;
 }
 
 .main-header__logo {
@@ -173,3 +174,16 @@ small {
   }
 }
 /* ------- FIN FOOTER ------ */
+
+/* ------- UTILITY ------ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+}
+/* ------- FIN UTILITY ------ */
