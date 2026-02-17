@@ -31,10 +31,14 @@ function applyFilters() {
       title === "" || jobTitle.textContent.toLowerCase().includes(title);
     const matchesTech = tech === "" || teachArray.includes(tech);
 
-    if (matchesTech && matchesLoc && matchesExp && matchesTitle) {
+    /* if (matchesTech && matchesLoc && matchesExp && matchesTitle) {
       job.style.display = "flex";
     } else {
       job.style.display = "none";
-    }
+    } */
+
+    // Podemos simplificar esto de la siguiente manera (usando ternarias):
+    const isMatch = matchesTech && matchesLoc && matchesExp && matchesTitle;
+    job.style.display = isMatch ? "flex" : "none";
   });
 }
